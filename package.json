@@ -1,0 +1,35 @@
+{
+  "name": "opencode-donsetch",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "DonSeTch search provider for the OpenCode v2 websearch tool",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donbowman/opencode-donsetch.git"
+  },
+  "homepage": "https://github.com/donbowman/opencode-donsetch#readme",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "donsetch",
+    "websearch",
+    "search"
+  ],
+  "exports": "./index.ts",
+  "files": [
+    "index.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "smoke": "node test/smoke.ts",
+    "test": "npm run typecheck && npm run smoke"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.0"
+  }
+}
